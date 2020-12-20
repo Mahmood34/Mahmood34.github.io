@@ -1,5 +1,5 @@
-layout: sidebar
-style: light
+layout: stacked
+style: dark
 
 plugins:
   - jekyll-octicons
@@ -28,16 +28,18 @@ projects:
     projects:
     # - repo-name
 
-# social_media:
+social_media:
   # behance: your_username
   # dribbble: your_username
   # facebook: your_username
+  figma: mahmood34
   # hackerrank: your_username
   # instagram: your_username
   # keybase: your_username
-  # linkedin: your_username
+  linkedin: mahmood34
   # mastodon: your_username
   # medium: your_username
+  sketchfab: mahmood34
   # stackoverflow: your_user_id
   # telegram: your_username
   # twitter: your_username
