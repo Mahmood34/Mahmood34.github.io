@@ -2,13 +2,13 @@
   <div class="container d-flex align-items-center flex-column">
 
     {% if site.layout == 'stacked' %}
-    {% assign metadata_styles = 'd-md-inline-block mx-3 mb-1 mb-md-0' %}
+    {% assign metadata_styles = 'd-md-inline-block mx-3 mb-3' %}
     {% else %}
     {% assign metadata_styles = 'd-flex flex-items-center mb-3' %}
     {% endif %}
 
     <img src="assets/img/avatar.png" class="masthead-avatar mb-3">
-    <h1 class="{% if site.style == 'dark' %}text-white{% endif %} masthead-heading mb-0">{% if user.name %}{{ user.name
+    <h1 class="{% if site.style == 'dark' %}text-white{% endif %} masthead-heading mb-3">{% if user.name %}{{ user.name
       }}{%
       else %}{{ user.login }}{% endif %}</h1>
     <p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
@@ -41,7 +41,7 @@
       {% endif %}
       {% if site.social_media %}
       <div
-        class="{% if site.layout == 'stacked' %}flex-justify-center mt-1 mt-md-3{% endif %} d-flex flex-wrap flex-items-start">
+        class="{% if site.layout == 'stacked' %}flex-justify-center mt-2{% endif %} d-flex flex-wrap flex-items-start">
         {% for account in site.social_media %}
 
         {% assign service_shortname = account[0] %}
