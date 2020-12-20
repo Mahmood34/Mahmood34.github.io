@@ -1,9 +1,27 @@
-<h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>My Interests</h2>
-<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Topics that I want to learn more about.</p>
-<div class="d-flex flex-wrap gutter-condensed mb-4">
-  {% for topic in site.topics %}
-    <div class="col-6 col-md-12 col-lg-6 col-xl-4 mb-3">
-      {% include topic-card.html %}
+<section class="page-section" id="my-interests">
+
+  <div class="container">
+    <div class="text-center">
+      <h2 class="{% if site.style=='dark' %}text-white{% endif %} page-section-heading d-inline-block mb-0">
+        My Interests
+      </h2>
     </div>
-  {% endfor %}
-</div>
+
+    <!-- Icon Divider-->
+    <div class="divider-custom">
+      <div class="{% if site.style=='dark' %}bg-white{% endif %} divider-custom-line"></div>
+      <div class="divider-custom-icon"><img src="assets/img/darktriforce.svg" width="32" height="32"></i></div>
+      <div class="{% if site.style=='dark' %}bg-white{% endif %} divider-custom-line"></div>
+    </div>
+
+    <p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Topics that I want to learn
+      more about.</p>
+    <div class="d-flex flex-wrap gutter-condensed mb-4">
+      {% for topic in site.topics %}
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 p-2">
+        {% include topic-card.html %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
