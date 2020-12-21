@@ -80,3 +80,24 @@
     }
     
   }
+
+  function sketchfabClick(id) {
+      document.getElementById(id).src = "https://sketchfab.com/playlists/embed?collection=343ee91b675e468cba3d3fff0179cb48";    
+  }
+
+  
+  var yourImg = document.getElementsById('dot');
+  if(yourImg && yourImg.style) {
+    for (let i = 0; i < yourImg.length; i++)
+    {
+      var x = getRndInteger(1000, 2000);
+      yourImg[i].style.width = x;
+      yourImg[i].style.height = x;
+
+    }
+
+  }
+
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+  }

@@ -1,43 +1,42 @@
 {% include header.html %}
 
+{% if site.layout == 'stacked' %}
 {% include navbar.html %}
 
-{% if site.layout == 'stacked' %}
-  {% include masthead.html metadata=true %}
 
+{% include masthead.html metadata=true %}
 
-  <div class="{% if site.style=='dark' %}text-white {% endif %}">
-    {{ content }}
-  </div>
+<div class="{% if site.style=='dark' %} text-white {% endif %}">
+  {{ content }}
+</div>
 
-  <div class="my-6">
-    {% include projects.html %}
-  </div>
+<div>
+  {% include github-projects.html %}
+</div>
 
-  <div class="my-6">
-    {% include sketchfab-projects.html %}
-  </div>
-  
-  <div class="my-6">
-    {% include figma-projects.html %}
-  </div>
+<div>
+  {% include sketchfab-projects.html %}
+</div>
 
-    <div class="my-6">
-      {% include about-me.html %}
-    </div>
+<div>
+  {% include figma-projects.html %}
+</div>
 
-  {% if site.topics %}
-  <div class="my-6">
-    {% include interests.html %}
-  </div>
-  {% endif %}
+<div>
+  {% include about-me.html %}
+</div>
 
-  {% unless posts_total == 0 %}
-  <div class="my-6">
-    {% include thoughts.html %}
-  </div>
-  {% endunless %}
+{% if site.topics %}
+<div>
+  {% include interests.html %}
+</div>
+{% endif %}
 
+{% unless posts_total == 0 %}
+<div>
+  {% include thoughts.html %}
+</div>
+{% endunless %}
 
 {% else %}
 <div class="d-md-flex min-height-full {% unless site.style == 'dark' %}border-md-bottom{% endunless %}">

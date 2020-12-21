@@ -2,17 +2,10 @@
     <div class="container">
 
         <!-- Portfolio Section Heading-->
-        <div class="text-center">
-            <h2 class="{% if site.style == 'dark' %}text-white{% endif %} page-section-heading mb-0 d-inline-block">
+        <div class="text-center mb-5">
+            <i class='fab fa-figma fa-2x' style='color:white'></i>
+            <h2 class="{% if site.style == 'dark' %}text-white{% endif %} page-section-heading mb-0 d-inline-block px-2">
                 Figma</h2>
-        </div>
-        <!-- Icon Divider-->
-        <div class="divider-custom">
-            <div class="{% if site.style == 'dark' %}bg-white{% endif %} divider-custom-line"></div>
-            <div class="divider-custom-icon">
-                <i class='fab fa-figma p-3' style='font-size: 5rem; color:white'></i>
-            </div>
-            <div class="{% if site.style == 'dark' %}bg-white{% endif %} divider-custom-line"></div>
         </div>
         <!-- Portfolio Grid Items-->
         <div class="row justify-content-center">
@@ -63,29 +56,20 @@
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content" style="background-color: #2f363d;">
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                        aria-hidden="true"><i class="fas fa-times"></i></span></button>
                     <div class="modal-body text-center">
-                        <div class="container">
+                        <div class="container px-0">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="{% if site.style == 'dark' %}text-white{% endif %} portfolio-modal-title mb-0">Amazon App Redesign</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="{% if site.style == 'dark' %}bg-white{% endif %} divider-custom-line"></div>
-                                        <div class="divider-custom-icon">
-                                            <i class='fab fa-amazon p-3' style='font-size: 5rem; color:white'></i>
-                                        </div>
-                                        <div class="{% if site.style == 'dark' %}bg-white{% endif %} divider-custom-line"></div>
-                                    </div>
+
                                     <!-- Portfolio Modal - Image-->
-                                    <iframe class="mb-5" id="0" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="750" src="" allowfullscreen></iframe>
+                                    <iframe class="mb-3" id="0" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="750" src="" allowfullscreen></iframe>
                                     <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="Amazon App Redesign"/> -->
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="{% if site.style == 'dark' %}text-white{% endif %} mb-5">
+                                    <p class="{% if site.style == 'dark' %}text-white{% endif %} mb-3">
                                         A refreshed design of the Amazon mobile application.
                                     </p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i
+                                    <button class="btn gradient text-white" href="#" data-dismiss="modal"><i
                                             class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
                             </div>

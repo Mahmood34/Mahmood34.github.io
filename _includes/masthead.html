@@ -1,4 +1,4 @@
-<header class="masthead bg-primary text-white text-center">
+<header class="masthead text-center pb-0">
   <div class="container d-flex align-items-center flex-column">
 
     {% if site.layout == 'stacked' %}
@@ -61,16 +61,16 @@
     {% endif %}
 
     <!-- Icon Divider-->
-    <div class="divider-custom divider-light">
-      <div class="divider-custom-line"></div>
-      <div class="divider-custom-icon">
-        <img src="assets/img/whitetriforce.svg" width="32" height="32"></i>
-      </div>
-      <div class="divider-custom-line"></div>
-    </div>
     <!-- Masthead Subheading-->
-    <p class="pre-wrap masthead-subheading font-weight-light mb-0">Software/Games/App Developer
+    <p class="{% if site.style == 'dark' %}text-white{% endif %} pre-wrap masthead-subheading font-weight-light mb-0">Software/Games/App Developer
       UX Designer </p>
-
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <img class="align-middle" src="assets/img/whitetriforce.svg" width="32" height="32"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+      
   </div>
 </header>
