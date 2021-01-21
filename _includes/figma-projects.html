@@ -4,23 +4,42 @@
         <!-- Portfolio Section Heading-->
         <div class="text-center mb-5">
             <i class='fab fa-figma fa-2x' style='color:white'></i>
-            <h2 class="{% if site.style == 'dark' %}text-white{% endif %} page-section-heading mb-0 d-inline-block px-2">
+            <h2
+                class="{% if site.style == 'dark' %}text-white{% endif %} page-section-heading mb-0 d-inline-block px-2">
                 Figma</h2>
+        </div>
+        <div>
+            <p class="{% if site.style == 'dark' %}text-white{% endif %} mb-0 d-inline-block px-2 mb-4 text-center">
+                After Studying Interactions Design at my University, I continued to create designs ranging from Logos to
+                UI redesigns.
+                Here are some of my designs.
+            </p>
         </div>
         <!-- Portfolio Grid Items-->
         <div class="row justify-content-center">
             <!-- Portfolio Items-->
             <div class="col-auto mb-5">
-                <div class="portfolio-item mx-auto" data-toggle="modal" onclick="figmaClick('0')" data-target="#portfolioModal0">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                         <div class="portfolio-item-caption-content text-center text-white">
-                            <i class="fas fa-plus fa-3x"></i></div>
+                            <i class="fas fa-plus fa-3x"></i>
+                        </div>
                     </div>
                     <i class='fab fa-amazon p-3' style='font-size: 10rem; color:white'></i>
                 </div>
             </div>
 
-            
+            <div class="col-auto mb-5">
+                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white">
+                            <i class="fas fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <i class='fab fa-windows p-3' style='font-size: 10rem; color:white'></i>
+                </div>
+            </div>
+
             <!-- <div class="col-auto mb-5">
                 <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -56,14 +75,17 @@
             <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content" style="background-color: #2f363d;">
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
-                        aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                            aria-hidden="true"><i class="fas fa-times"></i></span></button>
                     <div class="modal-body text-center">
                         <div class="container px-0">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
 
                                     <!-- Portfolio Modal - Image-->
-                                    <iframe class="mb-3" id="0" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="750" src="" allowfullscreen></iframe>
+                                    <iframe class="mb-3" id="0" style="border: 1px solid rgba(0, 0, 0, 0.1);"
+                                        width="100%" height="750"
+                                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fw01PqDwjblCBptR52Yng7g%2FAmazon-Redesign%3Fnode-id%3D1%253A2%26scaling%3Dscale-down"
+                                        allowfullscreen></iframe>
                                     <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="Amazon App Redesign"/> -->
                                     <!-- Portfolio Modal - Text-->
                                     <p class="{% if site.style == 'dark' %}text-white{% endif %} mb-3">
@@ -81,44 +103,25 @@
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
             aria-labelledby="#portfolioModal1Label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
+                <div class="modal-content" style="background-color: #2f363d;">
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
                             aria-hidden="true"><i class="fas fa-times"></i></span></button>
                     <div class="modal-body text-center">
-                        <div class="container">
+                        <div class="container px-0">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary mb-0">Tasty Cake</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
+
                                     <!-- Portfolio Modal - Image-->
-                                    <div class="sketchfab-embed-wrapper">
-                                        <iframe class="mb-5" id="0" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="750" src="" allowfullscreen></iframe>
-
-                                        <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-                                            <a href="https://sketchfab.com/3d-models/fantasy-tree-389bfe1cf05a45cbb13d960e642508ce?utm_medium=embed&utm_source=website&utm_campaign=share-popup"
-                                                target="_blank" style="font-weight: bold; color: #1CAAD9;">Fantasy
-                                                Tree</a>
-                                            by <a
-                                                href="https://sketchfab.com/mahmood34?utm_medium=embed&utm_source=website&utm_campaign=share-popup"
-                                                target="_blank" style="font-weight: bold; color: #1CAAD9;">Mahmood34</a>
-                                            on <a
-                                                href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup"
-                                                target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-                                        </p>
-                                    </div>
-
+                                    <iframe class="mb-3" id="0" style="border: 1px solid rgba(0, 0, 0, 0.1);"
+                                        width="100%" height="750"
+                                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fz9U6XQ7zlgLdR5hnZ2geSR%2FWindows-10-Redesign%3Fnode-id%3D1%253A2%26viewport%3D18%252C71%252C0.1320778727531433%26scaling%3Dscale-down"
+                                        allowfullscreen></iframe>
+                                    <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="Amazon App Redesign"/> -->
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Mollitia
-                                        neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore
-                                        quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                        itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i
+                                    <p class="{% if site.style == 'dark' %}text-white{% endif %} mb-3">
+                                        A Reimagining of the Windows Operating System that offers a Modern look with
+                                        rounded corners and simplified look. </p>
+                                    <button class="btn gradient text-white" href="#" data-dismiss="modal"><i
                                             class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
                             </div>

@@ -72,14 +72,7 @@
     } });
 
   })(jQuery); // End of use strict
-  
-  function figmaClick(id) {
-  if(document.getElementById(id).getAttribute('src') == "")
-    {
-      document.getElementById(id).src = "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fw01PqDwjblCBptR52Yng7g%2FAmazon-Redesign%3Fnode-id%3D1%253A2%26scaling%3Dscale-down";
-    }
-    
-  }
+
 
   function sketchfabClick(id) {
       document.getElementById(id).src = "https://sketchfab.com/playlists/embed?collection=343ee91b675e468cba3d3fff0179cb48";    
